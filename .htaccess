@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{SERVER_PORT} !443
+RewriteRule (.*) https://www.joy-oh.com/ [R]
+RewriteRule ^(.*)\.html$ $1.php [nc]
